@@ -11,7 +11,7 @@ app.use(express.json());
 // Cấu hình CORS đúng cách
 const allowedOrigins =
   process.env.NODE_ENV === "production"
-    ? ["https://frontend-porfolio-6ysr.vercel.app"]
+    ? ["https://minhkhoi-porfolio.vercel.app"]
     : ["http://localhost:3000"];
 
 app.use(
