@@ -33,6 +33,6 @@ app.use("/", contactRoute);
 //     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
 //   );
 // }
-
+app.get("/", (req, res) => res.send("Hello Server"));
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server listening on port ${port}`));
